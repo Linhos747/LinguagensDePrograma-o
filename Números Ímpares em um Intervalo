@@ -1,0 +1,8 @@
+# Solicita os limites do intervalo
+A = int(input("Digite o valor de A (início do intervalo): "))
+B = int(input("Digite o valor de B (fim do intervalo): "))
+
+# Exibe os números ímpares no intervalo [A, B]
+for i in range(A, B + 1):
+    if i % 2 != 0:  # Verifica se o número é ímpar
+        print(i)
