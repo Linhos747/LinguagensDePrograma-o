@@ -1,0 +1,12 @@
+# Solicita ao usuário uma lista de números
+entrada = input("Digite uma lista de números separados por espaço: ")
+lista = [int(numero) for numero in entrada.split()]
+
+# Solicita o número específico
+numero = int(input("Digite o número que deseja contar: "))
+
+# Conta as ocorrências do número na lista
+ocorrencias = lista.count(numero)
+
+# Exibe o resultado
+print(f"O número {numero} aparece {ocorrencias} vezes na lista.")
