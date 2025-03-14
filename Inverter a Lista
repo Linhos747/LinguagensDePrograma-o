@@ -1,0 +1,9 @@
+# Solicita ao usuário uma lista de palavras
+entrada = input("Digite uma lista de palavras separadas por espaço: ")
+lista = entrada.split()
+
+# Inverte a lista
+lista_invertida = lista[::-1]
+
+# Exibe o resultado
+print(f"Lista invertida: {lista_invertida}")
