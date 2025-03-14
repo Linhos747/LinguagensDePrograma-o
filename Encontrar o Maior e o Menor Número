@@ -1,0 +1,11 @@
+# Solicita ao usuário uma lista de números
+entrada = input("Digite uma lista de números separados por espaço: ")
+lista = [float(numero) for numero in entrada.split()]
+
+# Encontra o maior e o menor número
+maior = max(lista)
+menor = min(lista)
+
+# Exibe o resultado
+print(f"O maior número da lista é: {maior}")
+print(f"O menor número da lista é: {menor}")
