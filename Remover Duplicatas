@@ -1,0 +1,12 @@
+# Solicita ao usuário uma lista de números
+entrada = input("Digite uma lista de números separados por espaço: ")
+lista = [int(numero) for numero in entrada.split()]
+
+# Remove duplicatas mantendo a ordem original
+lista_sem_duplicatas = []
+for numero in lista:
+    if numero not in lista_sem_duplicatas:
+        lista_sem_duplicatas.append(numero)
+
+# Exibe o resultado
+print(f"Lista sem duplicatas: {lista_sem_duplicatas}")
