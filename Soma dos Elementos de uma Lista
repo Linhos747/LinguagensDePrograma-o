@@ -1,0 +1,9 @@
+# Solicita ao usuário uma lista de números inteiros
+entrada = input("Digite uma lista de números inteiros separados por espaço: ")
+lista = [int(numero) for numero in entrada.split()]
+
+# Calcula a soma dos elementos da lista
+soma = sum(lista)
+
+# Exibe o resultado
+print(f"A soma dos elementos da lista é: {soma}")
