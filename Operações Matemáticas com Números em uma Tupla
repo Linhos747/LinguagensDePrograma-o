@@ -1,0 +1,17 @@
+# Solicita quatro números ao usuário
+numeros = tuple(int(input(f"Digite o {i + 1}º número inteiro: ")) for i in range(4))
+
+# Quantas vezes o número 9 apareceu
+quantidade_nove = numeros.count(9)
+print(f"O número 9 apareceu {quantidade_nove} vezes.")
+
+# Posição do primeiro número 3 (caso exista)
+if 3 in numeros:
+    posicao_tres = numeros.index(3)
+    print(f"O primeiro número 3 foi digitado na posição {posicao_tres}.")
+else:
+    print("O número 3 não foi digitado.")
+
+# Números pares na tupla
+numeros_pares = [num for num in numeros if num % 2 == 0]
+print(f"Números pares: {numeros_pares}")
