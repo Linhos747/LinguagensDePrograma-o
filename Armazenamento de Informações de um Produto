@@ -1,0 +1,7 @@
+# Tupla com informações do produto
+produto = ("Notebook", 2500.00, 10)
+
+# Exibe os dados do produto
+print(f"Nome: {produto[0]}")
+print(f"Preço: R$ {produto[1]:.2f}")
+print(f"Quantidade em estoque: {produto[2]}")
