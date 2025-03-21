@@ -1,0 +1,19 @@
+# Solicita uma frase ao usuário
+frase = input("Digite uma frase: ")
+
+# Divide a frase em palavras
+palavras = frase.split()
+
+# Dicionário para armazenar a contagem de palavras
+contagem = {}
+
+# Conta cada palavra na frase
+for palavra in palavras:
+    if palavra in contagem:
+        contagem[palavra] += 1
+    else:
+        contagem[palavra] = 1
+
+# Exibe o dicionário de contagem
+print("Contagem de palavras:")
+print(contagem)
