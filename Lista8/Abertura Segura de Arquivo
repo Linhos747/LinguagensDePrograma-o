@@ -1,0 +1,14 @@
+while True:
+    try:
+        nome_arquivo = input("Digite o nome do arquivo para leitura: ")
+        with open(nome_arquivo, 'r') as arquivo:
+            conteudo = arquivo.read()
+            print("\nConteúdo do arquivo:")
+            print(conteudo)
+        break
+    except FileNotFoundError:
+        print("Erro: Arquivo não encontrado!")
+    except PermissionError:
+        print("Erro: Sem permissão para ler o arquivo!")
+    except Exception as e:
+        print(f"Erro inesperado: {str(e)}")
