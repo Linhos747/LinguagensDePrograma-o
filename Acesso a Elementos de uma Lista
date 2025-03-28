@@ -1,0 +1,11 @@
+lista = [10, 20, 30, 40, 50]
+
+while True:
+    try:
+        indice = int(input(f"Digite um índice (0 a {len(lista)-1}): "))
+        print(f"Valor no índice {indice}: {lista[indice]}")
+        break
+    except ValueError:
+        print("Erro: Digite apenas números inteiros!")
+    except IndexError:
+        print(f"Erro: Índice inválido! Digite um valor entre 0 e {len(lista)-1}")
