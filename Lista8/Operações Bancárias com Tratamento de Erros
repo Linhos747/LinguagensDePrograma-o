@@ -1,0 +1,17 @@
+class SaldoInsuficienteError(Exception):
+    pass
+
+saldo = 1000.00
+
+while True:
+    try:
+        valor = float(input(f"Seu saldo: R$ {saldo:.2f}\nDigite o valor para saque: "))
+        if valor > saldo:
+            raise SaldoInsuficienteError("Saldo insuficiente para realizar o saque!")
+        saldo -= valor
+        print(f"Saque realizado. Novo saldo: R$ {saldo:.2f}")
+        break
+    except ValueError:
+        print("Erro: Digite um valor numérico válido!")
+    except SaldoInsuficienteError as e:
+        print(f"Erro: {str(e)}")
